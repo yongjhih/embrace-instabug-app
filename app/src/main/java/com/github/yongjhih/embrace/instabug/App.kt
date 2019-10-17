@@ -1,11 +1,11 @@
 package com.github.yongjhih.embrace.instabug
 
-import android.app.Application
+import androidx.multidex.MultiDexApplication
 import com.instabug.library.Instabug
 import com.instabug.library.invocation.InstabugInvocationEvent
 import io.embrace.android.embracesdk.Embrace
 
-class App : Application() {
+class App : MultiDexApplication() {
     override fun onCreate() {
         super.onCreate()
         Embrace.getInstance().start(this)
