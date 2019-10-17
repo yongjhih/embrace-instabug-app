@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 apply from: 'git-version.gradle'
+// Disable plugin for keeping simple, put assets/build-info.json manually
+//apply plugin: 'embrace-swazzler'
 
 android {
     compileSdkVersion 29
@@ -41,7 +43,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    implementation "embrace-io:embrace-android-sdk:3.4.0"
+    implementation "embrace-io:embrace-android-sdk:3.7.2"
     implementation 'com.instabug.library:instabug:8.7.0'
     implementation "androidx.multidex:multidex:2.0.1"
 }
